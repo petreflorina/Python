@@ -1,0 +1,35 @@
+xScrieți o funcție care întoarce o listă cu toate cele 36 de combinații posibile ale aruncării a 2 zaruri.
+
+xScrieți o funcție care primește o listă și întoarce lista fără duplicate, fără a folosi funcția built-in set.
+
+xPlecând de la lista cu perechi (nume_firma, etaj), generați un dicționar, folosind "dict comprehension", în care cheia este etajul și valoarea este numele firmei.
+
+companies = [
+    ("Pixar", 2),
+    ("Disney", 4),
+    ("Warner Bros.", 9),
+    ("Universal", 5),
+    ("Reception", 0),
+    ("Studio Ghibli", 8),
+    ("DreamWorks", 6),
+]
+
+Plecând de la dicționarul din exercițiul precedent, generați o listă cu numele firmelor, folosind "list comprehension". Pe poziția N din listă se va regăsi numele firmei de la acel etaj, sau valoarea None dacă etajul este liber (clădirea are 10 etaje).
+
+xTransformați textul "zen of python" (import this) într-o listă de cuvinte. Generați o listă cu indecșii, în lista de cuvinte, la care apare cuvântul "better". Hint: enumerate().
+
+a) Scrieți o clasă Person care primește la inițializare nume și vârstă.
+
+b) În afara clasei, scrieți o funcție person_factory care primește o listă de tupluri. Fiecare tuplu este o pereche de forma (nume, vârstă). Funcția întoarce o listă de obiecte de tip Person inițializate cu valorile primite.
+
+c) Scrieți o altă funcție care primește o listă de obiecte Person și întoarce vârstele persoanelor al căror nume se termină în 'escu', sortate crescător.
+
+Simulați o mică bază de date de persoane folosind un dicționar:
+
+a) Vom avea o bază de date key -> value, key este un id, value este un dicționar cu 2 chei: nume și vârstă. Inițializați o bază de date goală.
+
+b) Creați o metodă add_person care primește baza de date, un id, un nume și o vârstă și introduce persoană în bază de date. Apelați-o și introduceți câteva persoane.
+
+c) Definiți o funcție care simulează un query pe baza de date. Funcția va extrage numele tuturor persoanelor minore (folosiți filter, lambda, map sau comprehensions).
+
+d) Scrieți o funcție care primind un id și un boolean, setează pe baza de date dacă persoana respectivă știe Python sau nu. Afișați un mesaj corespunzător dacă persoana primită ca parametru nu există în DB.
